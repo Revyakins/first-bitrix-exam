@@ -1,0 +1,15 @@
+# Папки битрикса
+/htdocs/bitrix/
+/htdocs/upload/*
+
+#Composer
+/htdocs/local/vendor/
+/htdocs/local/composer.json
+/htdocs/local/composer.lock
+
+#custom exam images and content
+/htdocs/local/templates/content/
+/htdocs/local/templates/images/
+
+#git
+/htdocs/idea/
