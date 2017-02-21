@@ -1,6 +1,6 @@
 # Папки битрикса
 /htdocs/bitrix/
-/htdocs/upload/*
+/htdocs/upload/
 
 #Composer
 /htdocs/local/vendor/
