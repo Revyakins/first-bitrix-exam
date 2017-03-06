@@ -2,23 +2,31 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");
 ?><p>
-	 Обратитесь к нашим специалистам и получите профессиональную консультацию по вопросам создания и покупки мебели (от дизайна, разработки технического задания до доставки мебели к Вам домой).<?$APPLICATION->IncludeComponent(
-	"bitrix:main.feedback", 
-	".default", 
-	array(
-		"EMAIL_TO" => "scoundrel1992@gmail.com",
-		"EVENT_MESSAGE_ID" => array(
-			0 => "44",
-		),
-		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
-		"REQUIRED_FIELDS" => array(
-		),
-		"USE_CAPTCHA" => "Y",
-		"COMPONENT_TEMPLATE" => ".default"
-	),
-	false
-);?>
+	 Обратитесь к нашим специалистам и получите профессиональную консультацию по вопросам создания и покупки мебели (от дизайна, разработки технического задания до доставки мебели к Вам домой).
 </p>
+<p>
+	 <?$APPLICATION->IncludeComponent(
+	"bitrix:highloadblock.view",
+	"",
+	Array(
+		"BLOCK_ID" => "2",
+		"LIST_URL" => "",
+		"ROW_ID" => "1"
+	)
+);?><br>
+</p>
+ <?$APPLICATION->IncludeComponent(
+	"bitrix:main.feedback",
+	".default",
+	Array(
+		"COMPONENT_TEMPLATE" => ".default",
+		"EMAIL_TO" => "scoundrel1992@gmail.com",
+		"EVENT_MESSAGE_ID" => array(0=>"44",),
+		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
+		"REQUIRED_FIELDS" => array(),
+		"USE_CAPTCHA" => "Y"
+	)
+);?>
 <p>
 	 Вы можете обратиться к нам по телефону, по электронной почте или договориться о встрече в нашем офисе. Будем рады помочь вам и ответить на все ваши вопросы.
 </p>
@@ -41,6 +49,18 @@ $APPLICATION->SetTitle("Контакты");
 	<li><a href="mailto:info@example.ru">info@example.ru</a> — общие вопросы</li>
 	<li><a href="mailto:sales@example.ru">sales@example.ru</a> — приобретение продукции</li>
 	<li><a href="mailto:marketing@example.ru">marketing@example.ru</a> — маркетинг/мероприятия/PR</li>
+	<li><?$APPLICATION->IncludeComponent(
+	"custom:main.feedback",
+	"",
+	Array(
+		"BUTTON_TEXT" => "default надпись на кнопке",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"DEFAULT_DESC" => "default Описание",
+		"DEFAULT_TITLE" => "default заголовок"
+	)
+);?><br>
+ </li>
 </ul>
 <h2>Офис в Москве</h2>
 <p>
