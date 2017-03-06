@@ -2,7 +2,7 @@
 
 <?if($arResult["FORM_TYPE"] == "login"):?>
     <?
-    if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR'] &&$arResult['ERROR_MESSAGE']['TYPE'] == 'ERROR')
+    if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR'] && $arResult['ERROR_MESSAGE']['TYPE'] == 'ERROR')
         ShowMessage($arResult['ERROR_MESSAGE']);
     ?>
 

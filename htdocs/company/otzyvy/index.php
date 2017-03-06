@@ -63,7 +63,7 @@ $APPLICATION->SetTitle("Отзывы");
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => "modern",
+		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "Отзывы",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_MODE" => "Y",

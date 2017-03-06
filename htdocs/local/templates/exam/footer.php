@@ -172,18 +172,8 @@ IncludeTemplateLangFile(__FILE__);
 							<span class="street-address">ул. Летняя стр.12, офис 512</span>
 						</span>
                 <span class="tel">
-                    <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include", 
-	".default", 
-	array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "include/phone.php",
-		"COMPONENT_TEMPLATE" => ".default"
-	),
-	false
-);?></span>
+                     <? $APPLICATION->IncludeFile(SITE_DIR .'include/phone.php', array(), array('MODE' => 'html')); ?></span>
+
                 <strong>Время работы:</strong> <br/> <span class="workhours">ежедневно с 9-00 до 18-00</span><br/>
             </p>
             <ul class="ft_solcial">

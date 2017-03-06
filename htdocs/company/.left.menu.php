@@ -41,6 +41,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Новый раздел", 
+		"/company/novyy-razdel/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>

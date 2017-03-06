@@ -12,4 +12,6 @@
 /htdocs/local/templates/images/
 
 #git
-/htdocs/idea/
+/htdocs/.idea/
+.gitignore
+.idea

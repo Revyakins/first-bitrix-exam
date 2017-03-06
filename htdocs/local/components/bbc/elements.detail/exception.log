@@ -1,0 +1,10 @@
+[2017-02-22 18:02:23] Catch exception: 
+Exception: Page not found in C:\OpenServer\domains\localhost\htdocs\local\modules\bex.bbc\lib\traits\common.php:376
+Stack trace:
+#0 C:\OpenServer\domains\localhost\htdocs\local\components\bbc\elements.detail\class.php(38): Bex\Bbc\Basis->return404(true)
+#1 C:\OpenServer\domains\localhost\htdocs\local\modules\bex.bbc\lib\basis.php(98): Bex\Bbc\Components\ElementsDetail->executeProlog()
+#2 C:\OpenServer\domains\localhost\htdocs\local\modules\bex.bbc\lib\basis.php(127): Bex\Bbc\Basis->executeBasis()
+#3 C:\OpenServer\domains\localhost\htdocs\bitrix\modules\main\classes\general\component.php(585): Bex\Bbc\Basis->executeComponent()
+#4 C:\OpenServer\domains\localhost\htdocs\bitrix\modules\main\classes\general\main.php(1035): CBitrixComponent->includeComponent('', Array, NULL)
+#5 C:\OpenServer\domains\localhost\htdocs\index.php(9): CAllMain->IncludeComponent('bbc:elements.de...', '', Array)
+#6 {main}

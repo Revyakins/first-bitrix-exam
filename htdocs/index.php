@@ -2,7 +2,55 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мебельная компания");
 ?><p>
-	 <br>
+	 <?$APPLICATION->IncludeComponent(
+	"api:search.page",
+	"",
+	Array(
+		"BUTTON_TEXT" => "НАЙТИ",
+		"CONVERT_CURRENCY" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"IBLOCK_2_FIELD" => array("NAME"),
+		"IBLOCK_2_PROPERTY" => array(""),
+		"IBLOCK_2_REGEX" => "",
+		"IBLOCK_2_SECTION" => array("",""),
+		"IBLOCK_2_SHOW_FIELD" => array(""),
+		"IBLOCK_2_SHOW_PROPERTY" => array(""),
+		"IBLOCK_2_SHOW_SECTION" => "N",
+		"IBLOCK_2_TITLE" => "[s1] Продукция",
+		"IBLOCK_ID" => array("2"),
+		"IBLOCK_TYPE" => array("products"),
+		"INCLUDE_CSS" => "Y",
+		"INCLUDE_JQUERY" => "N",
+		"INPUT_PLACEHOLDER" => "Поиск",
+		"ITEMS_LIMIT" => "15",
+		"MORE_BUTTON_CLASS" => "api-button",
+		"MORE_BUTTON_TEXT" => "",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Результаты поиска",
+		"PICTURE" => array(),
+		"PRICE_CODE" => array(),
+		"PRICE_EXT" => "N",
+		"PRICE_VAT_INCLUDE" => "Y",
+		"RESIZE_PICTURE" => "64x64",
+		"RESULT_NOT_FOUND" => "По вашему запросу ничего не найдено...",
+		"SEARCH_MODE" => "EXACT",
+		"SORT_BY1" => "SORT",
+		"SORT_BY2" => "SHOW_COUNTER",
+		"SORT_BY3" => "NAME",
+		"SORT_ORDER1" => "ASC",
+		"SORT_ORDER2" => "DESC",
+		"SORT_ORDER3" => "ASC",
+		"THEME" => "list",
+		"TRUNCATE_LENGTH" => "",
+		"USE_CURRENCY_SYMBOL" => "N",
+		"USE_TITLE_RANK" => "Y"
+	)
+);?><br>
 </p>
 <p>
 	 Наша компания существует на Российском рынке с 1992 года. За это время «Мебельная компания» прошла большой путь от маленькой торговой фирмы до одного из крупнейших производителей корпусной мебели в России.
@@ -38,7 +86,7 @@ $APPLICATION->SetTitle("Мебельная компания");
 );?> <br>
  <br>
 <h2>Выставка новых образцов</h2>
- <img src="<?=SITE_TEMPLATE_PATH?>/content/10.png" align="left" alt="">
+ <img src="/local/templates/exam/content/10.png" align="left" alt="">
 <p>
 	 Ваш портал приобретет все возможности для осуществления горизонтальных коммуникаций и управлению Экстранетом. Вы сможете организовать внутри компании коллективную работу над проектами в рабочих группах, вести учет и планирование времени и событий, обмениваться сообщениями и почтой через портал, проводить внутри компании видеоконференции и делать многое другое.
 </p>
@@ -50,6 +98,5 @@ $APPLICATION->SetTitle("Мебельная компания");
 	 При переходе вся информация на портале сохранится. Вам не потребуется создавать сайт заново. С помощью технологии SiteUpdate вы получите новые модули продукта и установите их без помощи разработчиков.
 </p>
  <br>
-
 <p>
 </p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

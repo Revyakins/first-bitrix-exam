@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Новости");
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
-	".default", 
+	"main_reviews", 
 	array(
 		"IBLOCK_TYPE" => "news",
 		"IBLOCK_ID" => "1",
@@ -78,7 +78,7 @@ $APPLICATION->SetTitle("Новости");
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
 		"PAGER_SHOW_ALL" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
-		"COMPONENT_TEMPLATE" => ".default",
+		"COMPONENT_TEMPLATE" => "main_reviews",
 		"USE_REVIEW" => "N",
 		"SET_LAST_MODIFIED" => "N",
 		"ADD_ELEMENT_CHAIN" => "N",
@@ -90,6 +90,10 @@ $APPLICATION->SetTitle("Новости");
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"SHOW_404" => "N",
 		"MESSAGE_404" => "",
+		"USE_SHARE" => "N",
+		"TEMPLATE_THEME" => "blue",
+		"MEDIA_PROPERTY" => "",
+		"SLIDER_PROPERTY" => "",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
